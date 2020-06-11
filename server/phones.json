@@ -1,0 +1,52 @@
+[
+    {
+        "id" : "i11p",
+        "name" : "iphone11pro",
+        "company" : "apple" 
+    },
+    {
+        "id" : "i11",
+        "name" : "iphone11",
+        "company" : "apple"
+    },
+    {
+        "id" : "i11pm",
+        "name" : "iphone11promax",
+        "company" : "apple" 
+    },
+    {
+        "id" : "ixr",
+        "name" : "iphonexr",
+        "company" : "apple" 
+    },
+    {
+        "id" : "gs20",
+        "name" : "galaxys20",
+        "company" : "samsung" 
+    },
+    {
+        "id" : "gs20p",
+        "name" : "galaxys20plus",
+        "company" : "samsung"
+    },
+    {
+        "id" : "gs20u",
+        "name" : "galaxys20ultra",
+        "company" : "samsung" 
+    },
+    {
+        "id" : "ga71",
+        "name" : "galaxya71",
+        "company" : "samsung"
+    },
+    {
+        "id" : "ga51",
+        "name" : "galaxya51",
+        "company" : "samsung" 
+    },
+    {
+        "id" : "n10p",
+        "name" : "note10plus",
+        "company" : "samsung"
+    }
+]

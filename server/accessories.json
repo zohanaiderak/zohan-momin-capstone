@@ -1,0 +1,182 @@
+[
+    {
+        "id" : "aa269b3c-ab38-11ea-bb37-0242ac130002",
+        "phoneid" : "i11p",
+        "name": "TPU Black",
+        "description": "TPU Black Matt TPU for Apple iPhone 11 Pro",
+        "quantity": "20",
+        "image" : "https://drive.google.com/file/d/1jxOOfwHeXkffhEq3I8YAMQLHKHe-bMdk/view",
+        "isInstock": true
+    },
+    {
+        "id" : "3cdfc7fe-ab3a-11ea-bb37-0242ac130002",
+        "phoneid" : "i11p",
+        "name": "OTCR Clear",
+        "description": "Mobile Case Specifically designed for Apple iPhone 11 Pro (5.8) made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "2971adaa-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "i11",
+        "name" : "TPU Black",
+        "description": "TPU Black Matt TPU for Apple iPhone 11",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "adc95af2-ab3a-11ea-bb37-0242ac130002",
+        "phoneid" : "i11",
+        "name" : "OTCR Clear",
+        "description": "Mobile Case Specifically designed for Apple iPhone 11 (6.1) made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "337a7944-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "i11pm",
+        "name" : "TPU Black",
+        "description": "TPU Black Matt TPU for Apple iPhone 11 Pro Max",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "9424d3e8-ab3e-11ea-bb37-0242ac130002",
+        "phoneid" : "i11pm",
+        "name" : "OTCR Clear",
+        "description": "Mobile Case Specifically designed for Apple iPhone 11 Pro Max (6.5) made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "3f6350aa-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "ixr",
+        "name" : "JP Black",
+        "description": "JP Black 4000mAh Juice Pack for Apple iPhone XR",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "95dd6422-ab5f-11ea-bb37-0242ac130002",
+        "phoneid" : "ixr",
+        "name" : "OTCR Clear",
+        "description": "Mobile Case Specifically designed for Apple iPhone XR made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "45c985f4-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "gs20",
+        "name" : "OTCR Clear", 
+        "description": "Mobile Case Specifically designed for Samsung Galaxy S20 made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "4cbd215e-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "gs20",
+        "name" : "TPU Black 3-in-1 Glitter",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy S20 made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "1cc9fee0-ab61-11ea-bb37-0242ac130002",
+        "phoneid" : "gs20p",
+        "name" : "OTCR Clear",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy S20 Plus made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "e3d25bcc-ab61-11ea-bb37-0242ac130002",
+        "phoneid" : "gs20p",
+        "name" : "TPU Black 3-in-1 Glitter",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy S20 Plus made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "54a6d0e0-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "gs20u",
+        "name" : "TPU Clear",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy S20 Ultra made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true 
+    },
+    {
+        "id" : "76b864cc-ab62-11ea-bb37-0242ac130002",
+        "phoneid" : "gs20u",
+        "name" : "TPU Black Soft Goosepery",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy S20 Ultra made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true 
+    },
+    {
+        "id" : "5be6c8b0-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "ga71",
+        "name" : "TPU Clear",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy A71 made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true 
+    },
+    {
+        "id" : "3efd2a26-ab63-11ea-bb37-0242ac130002",
+        "phoneid" : "ga71",
+        "name" : "OTCR Black AntiDrop",
+        "description": "Mobile Case Specifically designed for Samsung Galaxy A71 made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true 
+    },
+    {
+        "id" : "635415b2-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "ga51",
+        "name" : "TPU Clear", 
+        "description": "Mobile Case Specifically designed for Samsung Galaxy A51 made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "f327bb6e-ab64-11ea-bb37-0242ac130002",
+        "phoneid" : "ga51",
+        "name" : "OTCR Black AntiDrop", 
+        "description": "Mobile Case Specifically designed for Samsung Galaxy A51 made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "68fb5980-ab39-11ea-bb37-0242ac130002",
+        "phoneid" : "n10p",
+        "name" : "OTCR Black Symm",
+        "description": "Mobile Case Specifically designed for Samsung Note 10 Plus made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    },
+    {
+        "id" : "0c23bbc2-ab65-11ea-bb37-0242ac130002",
+        "phoneid" : "n10p",
+        "name" : "TPU Clear",
+        "description": "Mobile Case Specifically designed for Samsung Note 10 Plus made with premium materials which has precise cut-outs that gives you complete access to functionality (ports and buttons).",
+        "quantity": "20",
+        "image" : "",
+        "isInstock": true
+    }
+]
