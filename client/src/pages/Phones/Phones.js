@@ -61,9 +61,9 @@ class Phones extends React.Component{
             <div className="phones">
             <h1 className="phones__title">Select your phone</h1>
             <input className="phones__search" name="search" type="text" placeholder="Search" onChange={this.searchPhones} />
-            <ul className="phones__list">
+            <span className="phones__list">
                 {this.phonesList()}
-            </ul>
+            </span>
             </div>
         )
     }

@@ -15,7 +15,7 @@ function App() {
         <Switch>
             <Route path='/' exact component={MainPage} />
             <Route path='/repair-form' component={Repair} />
-            <Route path='/phones' component={Phones} />
+            <Route path='/phones' exact component={Phones} />
             <Route path='/phones/:id' component={Accessories} />
         </Switch>
       </BrowserRouter>
