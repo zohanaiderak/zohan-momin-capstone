@@ -11,6 +11,8 @@ app.use(cors());
 
 app.use(express.json());
 
+app.use(express.static('assets'))
+
 app.use('/phones', phoneRoutes );
 
 app.use('/accessories' , accessoryRoutes)

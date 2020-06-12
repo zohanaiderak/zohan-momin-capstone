@@ -19,9 +19,9 @@ class Header extends React.Component {
         active : "contact-form"
       })
     }
-    else if(window.location.pathname === '/accessories') {
+    else if(window.location.pathname === '/phones') {
       this.setState({
-        active : "accessories"
+        active : "phones"
       })
     }
     else{
@@ -39,7 +39,7 @@ class Header extends React.Component {
 
   changeToAccessories = e => {
     this.setState({
-      active: "accessories"
+      active: "phones"
     })
   }
 
@@ -63,7 +63,7 @@ class Header extends React.Component {
           <img className="header__logo"  src={Logo}/>
         </Link>
         <nav className="header__navbar">
-          <Link onClick={this.changeToAccessories} className={`header__link ${this.state.active === 'accessories' ? 'header__link--active' : ''}`} to="/accessories">
+          <Link onClick={this.changeToAccessories} className={`header__link ${this.state.active === 'accessories' ? 'header__link--active' : ''}`} to="/phones">
             <p className="header-name">Accessories</p>
           </Link>
           <Link onClick={this.changeToRepair} className={`header__link  ${this.state.active === 'repair-form' ? 'header__link--active' : ''}`} to="/repair-form">
