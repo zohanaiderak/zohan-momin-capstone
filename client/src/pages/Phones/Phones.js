@@ -42,7 +42,7 @@ class Phones extends React.Component{
     phonesList(){
         const phonesCard = this.state.phones.map(phone => {
             return (
-                <Link to={`/phones/${phone.id}`} className="link">
+                <Link to={`/phones/${phone.id}`} className={this.state.searchValue.includes(phone) ? 'link show' : 'hidden'}>
                     <PhoneList 
                         id = {phone.id}
                         name = {phone.name}
@@ -59,7 +59,7 @@ class Phones extends React.Component{
     render(){
         return(
             <div className="phones">
-            <h1 className="phones__title">Select your phone</h1>
+            <h1 className="phones__title">SELECT YOUR PHONE</h1>
             <input className="phones__search" name="search" type="text" placeholder="Search" onChange={this.searchPhones} />
             <span className="phones__list">
                 {this.phonesList()}

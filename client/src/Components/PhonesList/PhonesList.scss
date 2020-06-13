@@ -2,17 +2,6 @@
 @import '../../Styles/typography';
 @import '../../Styles/variables';
 
-.hidden{
-    display: none;
-}
-
-.show{
-    display: flex;
-    height: 350px;
-    flex-direction: column;
-    align-items: center;
-}
-
 .phone__pic{
     margin: 1rem;
     width: 150px;
