@@ -7,7 +7,8 @@ import Header from './Components/Header/Header';
 import Repair from './pages/Repair/Repair';
 import Accessories from './pages/Accessories/Accessories';
 import Phones from './pages/Phones/Phones';
-import Order from './Components/Order/Order'
+import Order from './Components/Order/Order';
+import AdminPhones from './pages/AdminPhones/AdminPhones'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='/phones' exact component={Phones} />
             <Route path='/phones/:id' exact component={Accessories} />
             <Route path='/phones/:id/:id' component={Order}/>
+            <Route path='/admin/phones' component={AdminPhones}/>
         </Switch>
       </BrowserRouter>
   );
