@@ -1,12 +1,11 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const port = process.env.PORT  || 8080;
 const cors = require('cors');
 const phoneRoutes = require("./phoneRoutes");
 const accessoryRoutes = require("./accessoryRoutes");
 const send = require('./send');
-
-require('dotenv').config();
 
 app.use(cors());
 

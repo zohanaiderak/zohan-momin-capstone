@@ -4,17 +4,18 @@ const nodemailer = require('nodemailer');
 const SMTPTransport = require('nodemailer/lib/smtp-transport');
 const user = process.env.USER;
 const password = process.env.PASSWORD;
+console.log(user);
 
-const transport={
-    host: 'smtp.gmail.com',
-    port: 587,
-    auth: {
-        type: 'OAuth2',
-        user: user,
-        pass: password
-    }
-}
-const transporter = nodemailer.createTransport(transport);
+
+const transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 587,
+  service: "Gmail",
+  auth: {
+      user: user,
+      pass: password
+  }
+});
 
 transporter.verify((error, success) => {
     if (error) {
@@ -30,10 +31,10 @@ transporter.verify((error, success) => {
     let description = req.body.description
     let accessory = req.body.accessory.name
     let phone = req.body.accessory.phoneid
-    let content = `name: ${name} \n email: ${email} \n description: ${description} \n phone: ${phone} \n accessory: ${accessory} `
+    let content = `Please wait for the confirmation. name: ${name} \n email: ${email} \n description: ${description} \n phone: ${phone} \n accessory: ${accessory} `
     let mailList = `${user},${email}`
     let mail = {
-      from: email,
+      from: user,
       to: mailList,  
       subject: `New Order from ${name}`,
       text: content
@@ -41,13 +42,9 @@ transporter.verify((error, success) => {
 
     transporter.sendMail(mail, (err, data) => {
         if (err) {
-          res.json({
-            status: 'fail'
-          })
+          console.log(err)
         } else {
-          res.json({
-           status: 'success'
-          })
+         console.log("success")
         }
       })
     })
