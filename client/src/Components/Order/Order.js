@@ -5,10 +5,10 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 class Order extends React.Component{
     state = {
-        name : "",
-        email : "",
-        description : "",
-        accessory : []
+        "name" : "",
+        "email" : "",
+        "description" : "",
+        "accessory" : {}
     }
 
     componentDidMount(){
@@ -36,28 +36,25 @@ class Order extends React.Component{
 
     cancel = e => {
          this.setState({
-            name : "",
-            email : "",
-            description : ""
+            "name" : "",
+            "email" : "",
+            "description" : ""
          })
     }
 
     handleClick = (e) =>{
         e.preventDefault();
         console.log(this.state)
-        // axios.post(`${API_URL}`, this.state)
-        //     .then((res)=>{
-        //         console.log(res)
-        //     })
-        // axios.post(`${API_URL}/${this.state.id}`, this.state)
-        //   .then(res=>{
-        //       console.log(res)
-        //   })
-        // this.setState({
-        //     title: "",
-        //     description: ""
-        // })
-        // alert("VIDEO UPLOADED, CHECK THE MAIN PAGE TO VIEW IT")
+        axios.post(`${API_URL}/send`, this.state)
+            .then(()=>{
+                alert("ORDER SUBMITTED")
+            })
+            .catch(()=> alert('Please Try Again'))
+        this.setState({
+            "name": "",
+            "email": "",
+            "description": ""
+        })
     }
 
     render(){

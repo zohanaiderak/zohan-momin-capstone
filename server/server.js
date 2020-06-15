@@ -3,7 +3,8 @@ const app = express();
 const port = process.env.PORT  || 8080;
 const cors = require('cors');
 const phoneRoutes = require("./phoneRoutes");
-const accessoryRoutes = require("./accessoryRoutes")
+const accessoryRoutes = require("./accessoryRoutes");
+const send = require('./send');
 
 require('dotenv').config();
 
@@ -15,6 +16,8 @@ app.use(express.static('assets'))
 
 app.use('/phones', phoneRoutes );
 
-app.use('/accessories' , accessoryRoutes)
+app.use('/accessories' , accessoryRoutes);
+
+app.use('/send' , send);
 
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));
