@@ -7,6 +7,8 @@ const phoneRoutes = require("./phoneRoutes");
 const accessoryRoutes = require("./accessoryRoutes");
 const send = require('./send');
 const upload = require('./multer');
+const contact = require('./contact');
+const fs = require('fs');
 
 app.use(cors());
 
@@ -20,6 +22,8 @@ app.use('/accessories' , accessoryRoutes);
 
 app.use('/send' , send);
 
-// app.use('/upload', upload );
+app.use('/contact' , contact)
+
+app.use('/upload', upload );
 
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));

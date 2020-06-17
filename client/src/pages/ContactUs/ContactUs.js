@@ -1,13 +1,13 @@
 import React from 'react';
-import './Repair.scss';
 import axios from 'axios';
 
 const API_URL = process.env.REACT_APP_API_URL;
-class Repair extends React.Component{
+
+class Contact extends React.Component{
     state = {
-        "name" : "",
-        "email" : "",
-        "description" : ""
+        name : "",
+        email : "",
+        description : ""
     }
 
     updateForm = event =>{
@@ -19,9 +19,9 @@ class Repair extends React.Component{
 
     cancel = e => {
          this.setState({
-            "name" : "",
-            "email" : "",
-            "description" : ""
+            name : "",
+            email : "",
+            description : ""
          })
     }
 
@@ -29,10 +29,10 @@ class Repair extends React.Component{
         e.preventDefault();
         console.log(this.state)
         axios.post(`${API_URL}/contact`, this.state)
-        .then(()=>{
-            alert("ORDER SUBMITTED")
-        })
-        .catch(()=> alert('Please Try Again'))
+            .then(()=>{
+                alert("ORDER SUBMITTED")
+            })
+            .catch(()=> alert('Please Try Again'))
         this.setState({
             "name": "",
             "email": "",
@@ -68,7 +68,7 @@ class Repair extends React.Component{
                         name="description"
                         onChange={this.updateForm}
                         value={this.state.description}
-                        placeholder="Phone Name and Tell us more about the damage.">
+                        placeholder="Inquire anything or ask a question.">
                     </textarea></span>
                 
                 
@@ -83,4 +83,4 @@ class Repair extends React.Component{
     
 }
 
-export default Repair;
+export default Contact;

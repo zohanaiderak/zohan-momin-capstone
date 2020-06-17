@@ -1,11 +1,14 @@
 const express = require('express');
+const fs = require('fs');
 const router = express.Router();
 const phones = require('./phones.json');
 const accessories = require('./accessories.json');
 
 router.get('/', (req, res) => {
-    res.status(200).json(phones);
+    fs.readFile('./phones.json', 'utf8', (_, phoneData) =>{
+    return res.status(200).json(JSON.parse(phoneData));
   });
+})
 
 router.get('/:phoneId', (req, res) => {
     let phonesMatch = phones.filter(phone=>{
@@ -17,5 +20,23 @@ router.get('/:phoneId', (req, res) => {
             phonesMatch[0].accessory = accessoryMatch;
             res.status(200).json(phonesMatch[0]);
   });
+
+  router.post('/', (req, res) => {
+    console.log(req.body)
+    fs.readFile('./phones.json', 'utf8', (_, phoneData) => {
+      const newPhones = [
+        ...JSON.parse(phoneData),
+        {
+          ...req.body
+        }
+      ];
+      console.log(newPhones);
+
+      fs.writeFile('./phones.json', JSON.stringify(newPhones), () => {
+        return res.status(201).json(newPhones);
+      });
+    });
+  });
+
 
 module.exports = router;
