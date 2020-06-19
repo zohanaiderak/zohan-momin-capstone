@@ -10,6 +10,7 @@ import Phones from './pages/Phones/Phones';
 import Order from './Components/Order/Order';
 import AdminPhones from './pages/AdminPhones/AdminPhones';
 import ContactUs from './pages/ContactUs/ContactUs';
+import AdminAccessories from './pages/AdminAccessories/AdminAccessories';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/phones/:id' exact component={Accessories} />
             <Route path='/phones/:id/:id' component={Order}/>
             <Route path='/admin/phones' component={AdminPhones}/>
+            <Route path='/admin/accessories' component={AdminAccessories}/>
         </Switch>
       </BrowserRouter>
   );
