@@ -38,5 +38,14 @@ router.get('/:phoneId', (req, res) => {
     });
   });
 
+  router.delete("/:phoneId",(req,res)=>{
+    if(phones.find(phone=> {return phone.id === req.params.phoneId}
+    )){ 
+      let index = phones.findIndex(item=> item.id === req.params.phoneId)
+      phones.splice(index,1)
+      res.status(200).send({...phones})
+    }else{res.status(400).send("Cant Find")}
+  });
+
 
 module.exports = router;

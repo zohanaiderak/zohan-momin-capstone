@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './AdminPhones.scss';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -9,7 +10,23 @@ class AdminPhones extends React.Component{
         name : "",
         company : "",
         images : "",
-        selectedFile : null
+        selectedFile : null,
+    }
+
+    addPhone=()=>{
+        this.setState({
+            add:"form",
+            delete: "hidden",
+            button: "hidden"
+        })
+    }
+
+    deletePhone=()=>{
+        this.setState({
+            add: "hidden",
+            delete: "form",
+            button: "hidden"
+        })
     }
 
     changeHandler=event=>{
@@ -34,7 +51,12 @@ class AdminPhones extends React.Component{
         axios.post(`${API_URL}/upload`, data)
         .then(()=>alert("posted"))
         .catch((err)=>alert(err));
-        const phoneData = this.state;
+        const phoneData = {
+            id: this.state.id,
+            name: this.state.name,
+            company: this.state.company,
+            images: this.state.images
+        };
         console.log(phoneData);
         axios.post(`${API_URL}/phones` , phoneData)
             .then(()=>alert("posted phones data"))
@@ -44,19 +66,17 @@ class AdminPhones extends React.Component{
     render(){
         return(
             <form className="form" >
-                <label>Id :
-                    <input name="id" onChange={this.changeInput}></input>
-                </label>
-                <label>Name :
-                    <input onChange={this.changeInput} name="name"></input>
-                </label>
-                <label>Comapny :
-                    <input onChange={this.changeInput} name="company"></input>
-                </label>
-                <label> Upload Image :
-                <input type="file" name="images" onChange={this.changeHandler}/>
-                </label> 
-                <button type="submit" onClick={this.submit}>Submit</button>
+                <div className="form__container"><h2 className="addPhone">ADD</h2>
+                <span className="input-container"><label className ="uploadInput">Id :</label>
+                    <input className="uploadName" name="id" onChange={this.changeInput}></input></span>
+                <span className="input-container"><label className ="uploadInput">Name :</label>
+                    <input className="uploadName" onChange={this.changeInput} name="name"></input></span>
+                <span className="input-container"><label className ="uploadInput">Comapny :</label>
+                    <input className="uploadName" onChange={this.changeInput} name="company"></input></span>
+                <span className="input-container"><label className ="uploadInput"> Upload Image :</label>
+                <input type="file" name="images" onChange={this.changeHandler}/></span> 
+                <div className="button__container"><button className="publishButton" type="submit" onClick={this.submit}>Submit</button></div>
+                </div>
             </form>
         )
     }
