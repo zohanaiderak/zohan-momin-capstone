@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c71fd7d.chunk.css",
+    "main.js": "/static/js/main.80fca916.chunk.js",
+    "main.js.map": "/static/js/main.80fca916.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0eb0f73.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0eb0f73.js.map",
+    "static/js/2.c6754866.chunk.js": "/static/js/2.c6754866.chunk.js",
+    "static/js/2.c6754866.chunk.js.map": "/static/js/2.c6754866.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.59ad88b24b1534f8e70eaf15f262b3d5.js": "/precache-manifest.59ad88b24b1534f8e70eaf15f262b3d5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9c71fd7d.chunk.css.map": "/static/css/main.9c71fd7d.chunk.css.map",
+    "static/js/2.c6754866.chunk.js.LICENSE.txt": "/static/js/2.c6754866.chunk.js.LICENSE.txt",
+    "static/media/Icon-instagram.svg": "/static/media/Icon-instagram.6ec340c0.svg",
+    "static/media/Admin.scss": "/static/media/Linotype - AvenirNextLTPro-Regular.67016125.otf",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/Hero.scss": "/static/media/msnap-logo.d5e155ee.png",
+    "static/media/msnap-logo.png": "/static/media/msnap-logo.f5f56ebc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0eb0f73.js",
+    "static/js/2.c6754866.chunk.js",
+    "static/css/main.9c71fd7d.chunk.css",
+    "static/js/main.80fca916.chunk.js"
+  ]
+}
