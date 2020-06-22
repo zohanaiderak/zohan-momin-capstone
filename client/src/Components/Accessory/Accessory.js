@@ -1,10 +1,9 @@
 import React from 'react';
-import axios from 'axios';
 
 const Accessory = (props) =>{
         return(
             <>
-                <img className="phone__pic" src={props.image}></img>
+                <img className="phone__pic" src={props.image} alt="Phone"></img>
                 <h3 className="phone__name">{props.name}</h3>
             </>
         )

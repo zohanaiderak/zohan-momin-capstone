@@ -1,11 +1,10 @@
 import React from 'react';
-import axios from 'axios';
 import './PhonesList.scss';
 
 const PhoneList =(props) =>{
     return(
         <>
-            <img className="phone__pic" src={props.images}></img>
+            <img className="phone__pic" src={props.images} alt="Phone"></img>
             <h3 className="phone__name">{props.name}</h3>
         </>
     )

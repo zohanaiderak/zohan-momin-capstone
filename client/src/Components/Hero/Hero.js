@@ -13,7 +13,7 @@ const Hero = () =>{
             </p>
         </main>
         <section className="map">
-        <Iframe className="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.646528684916!2d-79.64467978464792!3d43.59307837912341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b478540a3f8ff%3A0xe443a4f319d2e51d!2sMobile%20Snap!5e0!3m2!1sen!2sca!4v1591755515758!5m2!1sen!2sca" width="900" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></Iframe>
+        <Iframe className="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.646528684916!2d-79.64467978464792!3d43.59307837912341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b478540a3f8ff%3A0xe443a4f319d2e51d!2sMobile%20Snap!5e0!3m2!1sen!2sca!4v1591755515758!5m2!1sen!2sca" width="900" height="500" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></Iframe>
         </section>
         <footer class="ftr">
         <div class="footer">  

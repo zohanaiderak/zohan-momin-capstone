@@ -60,7 +60,7 @@ class Header extends React.Component {
     return (
       <header className="header">
         <Link to="/" onClick={this.changeToHome}>
-          <img className="header__logo"  src={Logo}/>
+          <img className="header__logo"  src={Logo} alt="LOGO"/>
         </Link>
         <nav className="header__navbar">
           <Link onClick={this.changeToAccessories} className={`header__link ${this.state.active === 'phones' ? 'header__link--active' : ''}`} to="/phones">

@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MainPage from './pages/Main/Main';
-import {BrowserRouter, Switch , Link, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Repair from './pages/Repair/Repair';
 import Accessories from './pages/Accessories/Accessories';

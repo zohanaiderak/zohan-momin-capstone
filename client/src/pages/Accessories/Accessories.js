@@ -23,9 +23,10 @@ class Accessories extends React.Component{
             if(
                 accessory.name.toLowerCase().includes(searchInput)
                 ){
-                    return accessory
+                    return accessory;
                 }
-        });
+            return(console.log(accessory));
+        })
         this.setState({
             searchValue : searchResult 
         })

@@ -33,6 +33,7 @@ class Phones extends React.Component{
                 ){
                     return phone
                 }
+                return(console.log(phone));
         });
         this.setState({
             searchValue : searchResult 
